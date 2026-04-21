@@ -4,7 +4,7 @@ Make great analog designs
 ## Description
 This are the steps to install and use LTspice 64 bits on Linux Ubuntu 20.04 . <br>
 
-## Installation
+## Installation for LTspice XVII
 
 ```
 # Update your package manager.
@@ -22,9 +22,21 @@ wine LTspice64.exe
 rm LTspice64.exe
 ```
 
-## How to execute LTspice 
-
+## Installation for LTspice 26.0.1 (latest version)
 ```
+# Update your package manager
+sudo apt-get update
+
+# Install Wine
+sudo apt-get install wine-stable
+
+# Download LTspice using the .msi
+wget https://ltspice.analog.com/software/LTspice64.msi
+
+# Install LTspice
+wine msiexec /i LTspice64.msi 
+```
+
 # Start lstpice through wine
 wine ~/.wine/drive_c/Program\ Files/LTC/LTspiceXVII/XVIIx64.exe
 ```
